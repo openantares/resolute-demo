@@ -1,0 +1,1 @@
+function e(e){let t,n=!1;return{notify(){n||t!==void 0||(t=e.request(()=>{if(t=void 0,!n)try{e.consume(e.read())}catch(t){e.onError(t)}}))},dispose(){n=!0,t!==void 0&&e.cancel(t),t=void 0}}}export{e as t};
