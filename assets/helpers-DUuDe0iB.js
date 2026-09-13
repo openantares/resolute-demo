@@ -1,0 +1,1 @@
+function e(...e){let t=e.flatMap(e=>e?.split(/\s+/).filter(Boolean)??[]);return[...new Set(t)].join(` `)||void 0}var t={neutral:`Neutral`,live:`Live`,recorded:`Recorded`,pending:`Pending`,ended:`Ended`,retracted:`Retracted`,refuted:`Refuted`,error:`Error`};function n(e,n){let r=n?.trim(),i=t[e];return r&&r!==i?`${i} · ${r}`:i}export{n,e as t};
